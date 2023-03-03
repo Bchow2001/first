@@ -156,15 +156,24 @@ button {
     margin-right: 200px;
 }
 
+.banner{
+    background-color: #fefbea
+}
+
 .bannercont {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-    margin: 30px;
+    padding: 40px;
+    margin: 40px 120px;
     gap: 16px;
+    background-color: red;
 }
 
 .footer {
-    text-align: center;
+    display:flex;
+    background-color: #fefbea;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50px;
 }
