@@ -167,7 +167,7 @@ button {
     padding: 40px;
     margin: 40px 120px;
     gap: 16px;
-    background-color: red;
+    background-color: rgb(242, 242, 255);
 }
 
 .footer {
