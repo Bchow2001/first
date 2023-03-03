@@ -1,23 +1,43 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0;
     background-image: url("");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
-body, html {
-    height: 100%;
+a {
+    text-decoration: none;
 }
 
-div {
-    border: 1px solid #000000;
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px 20px;
+}
+#logo {
+    border-radius: 50%;
 }
 
+#logotext {
+    font-weight: 80;
+    font-size: 24px;
+}
 
+#text1{
+    font-weight: extra-bold;
+    font-size: 64px;
+    margin-bottom: -12px;
+}
+
+.text2{
+    font-size: 18px;
+    font-weight: 250;
+}
 
 .header {
     display: flex;
@@ -25,6 +45,14 @@ div {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: #FEFBEA;
+}
+
+.logocontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
 }
 
 .headerlinks {
@@ -36,24 +64,32 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     padding: 50px 0;
+    height: 20%;
+    gap: 250px;
+    background-color: #FEFBEA;
 }
 
 .desctext {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
 }
 
-.img {
-    max-width: 400px;
-}
 .main {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
+    padding: 25px 15px;
+    height: 40%;
+}
+
+.mainhead {
+    font-size: 48px;
 }
 
 .cards {
@@ -61,31 +97,41 @@ div {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     flex: 1 1 0;
-    max-width: 200px;
+    min-width: 300px;
+    min-height: 300px;
+
 }
 
 .quote {
     display: flex;
     flex-direction: column;
     padding: 10px 100px;
+    justify-content: center;
     align-items: center;
+    min-height: 200px;
+    background-color: #fefbea;
 }
 
 .quotetext {
     align-self: center;
-    max-width: 500px;
+    max-width: 700px;
+    font-style: italic;
+    font-weight: 30;
+    font-size: 25px;
 }
 
 .quoteauth {
     align-self: flex-end;
+    margin-right: 200px;
 }
 
 .bannercont {
