@@ -21,10 +21,11 @@ button {
 }
 #logo {
     border-radius: 50%;
+    flex-shrink: 0;
 }
 
 #logotext {
-    font-weight: 80;
+    font-weight: bold;
     font-size: 24px;
 }
 
@@ -60,13 +61,34 @@ button {
     gap: 24px;
 }
 
+.link {
+    font-size: 18px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 270px;
+    overflow: auto;
+    padding: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
 .desc {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px 0;
     height: 20%;
-    gap: 250px;
     background-color: #FEFBEA;
 }
 
